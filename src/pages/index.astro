@@ -244,24 +244,6 @@ const programs = [
         </div>
       </section>
 
-      <section class="stats">
-        <div class="shell stats__grid">
-          <h2>Un acteur engagé,<br />pas un promoteur comme les autres.</h2>
-          <div>
-            <strong>1</strong>
-            <span>coopérative promotrice locale</span>
-          </div>
-          <div>
-            <strong>45+</strong>
-            <span>collaborateurs engagés</span>
-          </div>
-          <div>
-            <strong>3</strong>
-            <span>leviers : accession, promotion, syndic</span>
-          </div>
-        </div>
-      </section>
-
       <section class="section" id="preuves">
         <div class="shell">
           <div class="heading reveal">
@@ -1093,47 +1075,6 @@ const programs = [
     font-size: 0.84rem;
   }
 
-  .stats {
-    padding: 86px 0;
-    background: var(--ink);
-    color: #fff;
-  }
-
-  .stats__grid {
-    display: grid;
-    grid-template-columns: 1.3fr repeat(3, 1fr);
-    gap: 35px;
-    align-items: end;
-  }
-
-  .stats h2 {
-    color: #fff;
-    font-size: clamp(2.5rem, 4vw, 4.7rem);
-    margin: 0;
-  }
-
-  .stats__grid > div {
-    border-left: 1px solid rgba(255, 255, 255, 0.18);
-    padding-left: 22px;
-  }
-
-  .stats strong,
-  .stats span {
-    display: block;
-  }
-
-  .stats strong {
-    color: var(--orange);
-    font-size: clamp(3rem, 5vw, 5.7rem);
-    line-height: 1;
-    letter-spacing: -0.07em;
-  }
-
-  .stats span {
-    color: rgba(255, 255, 255, 0.65);
-    font-size: 0.85rem;
-  }
-
   .news {
     display: grid;
     grid-template-columns: 1.2fr 0.8fr 0.8fr;
@@ -1311,14 +1252,6 @@ const programs = [
       grid-column: 1 / -1;
     }
 
-    .stats__grid {
-      grid-template-columns: 1fr 1fr;
-    }
-
-    .stats h2 {
-      grid-column: 1 / -1;
-    }
-
     .footer__grid {
       grid-template-columns: 1fr 1fr;
     }
@@ -1371,7 +1304,6 @@ const programs = [
     .programs,
     .news,
     .values,
-    .stats__grid,
     .footer__grid {
       grid-template-columns: 1fr;
     }
@@ -1379,10 +1311,6 @@ const programs = [
     .services article:last-child,
     .programs article:first-child,
     .news article:first-child,
-    .stats h2 {
-      grid-column: auto;
-    }
-
     .section {
       padding: 78px 0;
     }
@@ -1405,12 +1333,6 @@ const programs = [
 
     .coop__visual {
       height: 460px;
-    }
-
-    .stats__grid > div {
-      border-left: 0;
-      border-top: 1px solid rgba(255, 255, 255, 0.18);
-      padding: 18px 0;
     }
 
     .footer__bottom {
