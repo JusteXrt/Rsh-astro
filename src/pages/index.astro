@@ -11,7 +11,10 @@ const programs = [
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <meta name="description" content="Landing page premium de Rhône Saône Habitat." />
+    <meta
+      name="description"
+      content="Landing page premium de Rhône Saône Habitat, coopérative de promotion immobilière et de syndic."
+    />
     <meta name="theme-color" content="#153f43" />
     <title>Rhône Saône Habitat — Habiter mieux, durablement</title>
   </head>
@@ -19,10 +22,10 @@ const programs = [
   <body>
     <div class="topbar">
       <div class="shell topbar__inner">
-        <span>Coopérative de l’habitat · Métropole lyonnaise</span>
+        <span>Coopérative de promotion immobilière · Métropole lyonnaise</span>
         <div>
-          <a href="#">Espace locataire</a>
-          <a href="#">Espace copropriétaire</a>
+          <a href="#programmes">Programmes neufs</a>
+          <a href="#syndic">Copropriété</a>
           <a href="#contact">Contact</a>
         </div>
       </div>
@@ -35,14 +38,14 @@ const programs = [
         </a>
         <nav aria-label="Navigation principale">
           <a href="#acheter">Acheter</a>
-          <a href="#louer">Louer</a>
+          <a href="#programmes">Programmes</a>
           <a href="#syndic">Syndic</a>
           <a href="#cooperative">La coopérative</a>
-          <a href="#actualites">Actualités</a>
+          <a href="#preuves">Preuves</a>
         </nav>
         <div class="nav__actions">
-          <a class="button button--ghost" href="#contact">Mon espace</a>
-          <a class="button" href="#recherche">Trouver un logement</a>
+          <a class="button button--ghost" href="#contact">Parler à un conseiller</a>
+          <a class="button" href="#programmes">Voir les programmes</a>
         </div>
         <button class="menu" type="button" aria-label="Ouvrir le menu">Menu</button>
       </div>
@@ -55,25 +58,25 @@ const programs = [
             <span class="eyebrow">Habiter mieux, durablement</span>
             <h1>Votre logement.<br /><em>Votre avenir.</em><br />Notre engagement.</h1>
             <p>
-              Rhône Saône Habitat accompagne les habitants de la métropole lyonnaise pour acheter, louer
-              et vivre leur copropriété avec confiance.
+              Rhône Saône Habitat conçoit des programmes immobiliers accessibles et bien situés pour
+              devenir propriétaire autour de Lyon, sans renoncer à la qualité, au cadre de vie et au collectif.
             </p>
             <div class="hero__actions">
-              <a class="button" href="#recherche">Découvrir nos logements <span>→</span></a>
+              <a class="button" href="#recherche">Trouver un programme <span>→</span></a>
               <a class="button button--ghost" href="#cooperative">Découvrir la coopérative</a>
             </div>
             <div class="proofs">
               <div>
-                <strong>3 métiers</strong>
-                <span>Accession, location, syndic</span>
+                <strong>Promoteur coopératif</strong>
+                <span>Programmes neufs et accession</span>
               </div>
               <div>
-                <strong>100 % local</strong>
-                <span>Ancrage métropolitain</span>
+                <strong>Territoires choisis</strong>
+                <span>Lyon et villes de vie</span>
               </div>
               <div>
-                <strong>1 équipe</strong>
-                <span>À vos côtés</span>
+                <strong>Cadre sécurisé</strong>
+                <span>Du projet à la copropriété</span>
               </div>
             </div>
           </div>
@@ -96,24 +99,25 @@ const programs = [
       <section id="recherche" class="search">
         <div class="shell">
           <form class="searchbox">
-            <div class="tabs" role="tablist" aria-label="Type de recherche">
+            <div class="tabs" role="tablist" aria-label="Type de projet">
               <button type="button" class="active">Acheter</button>
-              <button type="button">Louer</button>
+              <button type="button">Programme neuf</button>
             </div>
             <div class="fields">
               <label>
-                <span>Où ?</span>
-                <input placeholder="Ville ou code postal" />
+                <span>Où souhaitez-vous habiter ?</span>
+                <input placeholder="Ville, quartier ou bassin de vie" />
               </label>
               <label>
-                <span>Type de bien</span>
+                <span>Dispositif</span>
                 <select>
-                  <option>Appartement</option>
-                  <option>Maison</option>
+                  <option>BRS / PSLA / libre</option>
+                  <option>Accession maîtrisée</option>
+                  <option>Accession libre</option>
                 </select>
               </label>
               <label>
-                <span>Pièces</span>
+                <span>Typologie</span>
                 <select>
                   <option>2 pièces et +</option>
                   <option>3 pièces et +</option>
@@ -121,10 +125,10 @@ const programs = [
                 </select>
               </label>
               <label>
-                <span>Budget maximum</span>
+                <span>Budget maîtrisé</span>
                 <input placeholder="250 000 €" />
               </label>
-              <button class="searchbtn" type="submit">Rechercher</button>
+              <button class="searchbtn" type="submit">Voir les programmes</button>
             </div>
           </form>
         </div>
@@ -134,12 +138,12 @@ const programs = [
         <div class="shell">
           <div class="heading reveal">
             <div>
-              <span class="eyebrow">Trois métiers, une même exigence</span>
-              <h2>Un accompagnement clair à chaque moment de votre parcours.</h2>
+              <span class="eyebrow">Promotion, accession, copropriété</span>
+              <h2>Construire des logements accessibles sans baisser le niveau d’exigence.</h2>
             </div>
             <p>
-              Des solutions accessibles, des interlocuteurs identifiés et une connaissance concrète du
-              territoire.
+              Un logement abordable ne doit pas ressembler à un choix par défaut. Il doit donner envie
+              d’habiter, de rester et de faire communauté.
             </p>
           </div>
 
@@ -148,23 +152,23 @@ const programs = [
               <small>01 — Accession</small>
               <div class="service__symbol house"></div>
               <h3>Devenir propriétaire</h3>
-              <p>BRS, PSLA, TVA réduite : trouvez la solution adaptée à votre projet et à vos ressources.</p>
+              <p>BRS, PSLA, TVA réduite : des parcours sécurisés pour acheter avec plus de clarté et moins de pression.</p>
               <a href="#programmes">Voir les programmes <span>→</span></a>
             </article>
 
-            <article class="service service--teal reveal" id="louer">
-              <small>02 — Location</small>
-              <div class="service__symbol key"></div>
-              <h3>Trouver une location</h3>
-              <p>Consultez les offres disponibles et les informations utiles à votre quotidien de locataire.</p>
-              <a href="#">Voir les offres <span>→</span></a>
+            <article class="service service--teal reveal" id="promotion">
+              <small>02 — Promotion</small>
+              <div class="service__symbol district"></div>
+              <h3>Créer des lieux de vie</h3>
+              <p>Architecture, usages, espaces partagés : des résidences conçues comme des communautés choisies.</p>
+              <a href="#cooperative">Notre démarche <span>→</span></a>
             </article>
 
             <article class="service service--orange reveal" id="syndic">
               <small>03 — Syndic</small>
               <div class="service__symbol blocks"></div>
-              <h3>Bien vivre sa copropriété</h3>
-              <p>Une gestion de proximité, responsable et transparente pour préserver votre cadre de vie.</p>
+              <h3>Faire vivre la copropriété</h3>
+              <p>Une gestion de proximité, lisible et responsable pour préserver la qualité du cadre de vie dans le temps.</p>
               <a href="#">Découvrir le syndic <span>→</span></a>
             </article>
           </div>
@@ -176,7 +180,7 @@ const programs = [
           <div class="heading reveal">
             <div>
               <span class="eyebrow">Nos programmes</span>
-              <h2>Des lieux de vie pensés pour aujourd’hui et pour demain.</h2>
+              <h2>Des lieux de vie posés, désirables et connectés aux usages.</h2>
             </div>
             <a class="button button--ghost" href="#">Voir tous les programmes</a>
           </div>
@@ -207,31 +211,32 @@ const programs = [
           <div class="coop__visual reveal">
             <div class="coop__sun"></div>
             <div class="coop__building"><span></span><span></span></div>
-            <blockquote>« Mettre l’habitat au service des personnes et du territoire. »</blockquote>
+            <blockquote>« Un programme réussi doit améliorer un quotidien, pas seulement remplir un plan de vente. »</blockquote>
           </div>
           <div class="coop__copy reveal">
             <span class="eyebrow">Rhône Saône Habitat</span>
-            <h2>Une coopérative locale, utile et engagée.</h2>
+            <h2>Coopérer en local, utilement, au quotidien.</h2>
             <p>
-              Plus qu’un acteur immobilier, nous construisons des parcours résidentiels durables et
-              accessibles, en proximité avec celles et ceux qui habitent le territoire.
+              Rhône Saône Habitat n’agit pas comme un promoteur privé classique. La coopérative arbitre
+              ses projets avec une utilité concrète : prix maîtrisés, accompagnement, qualité d’usage et
+              ancrage dans des villes où l’on choisit vraiment d’habiter.
             </p>
             <div class="values">
               <div>
-                <strong>Proximité</strong>
-                <span>Des équipes disponibles et ancrées localement.</span>
+                <strong>Prix maîtrisés</strong>
+                <span>Des dispositifs qui ouvrent l’accession sans tirer l’image du logement vers le bas.</span>
               </div>
               <div>
-                <strong>Accessibilité</strong>
-                <span>Des solutions pensées pour des budgets réels.</span>
+                <strong>Qualité d’usage</strong>
+                <span>Des résidences dessinées pour le quotidien : lumière, rangements, mobilités, communs.</span>
               </div>
               <div>
-                <strong>Durabilité</strong>
-                <span>Des opérations responsables et pérennes.</span>
+                <strong>Intérêt collectif</strong>
+                <span>Une logique coopérative qui privilégie l’équilibre du projet plutôt que la seule marge.</span>
               </div>
               <div>
-                <strong>Coopération</strong>
-                <span>Une gouvernance tournée vers l’intérêt collectif.</span>
+                <strong>Territoire choisi</strong>
+                <span>Habiter autour de Lyon comme un choix de vie, pas comme une concession.</span>
               </div>
             </div>
             <a class="button" href="#">Comprendre notre modèle</a>
@@ -241,90 +246,74 @@ const programs = [
 
       <section class="stats">
         <div class="shell stats__grid">
-          <h2>Un acteur proche,<br />des impacts concrets.</h2>
+          <h2>Un acteur engagé,<br />pas un promoteur comme les autres.</h2>
           <div>
-            <strong>3</strong>
-            <span>métiers complémentaires</span>
+            <strong>1</strong>
+            <span>coopérative promotrice locale</span>
           </div>
           <div>
             <strong>45+</strong>
             <span>collaborateurs engagés</span>
           </div>
           <div>
-            <strong>1</strong>
-            <span>territoire au cœur de l’action</span>
+            <strong>3</strong>
+            <span>leviers : accession, promotion, syndic</span>
           </div>
         </div>
       </section>
 
-      <section class="section" id="actualites">
+      <section class="section" id="preuves">
         <div class="shell">
           <div class="heading reveal">
             <div>
-              <span class="eyebrow">Actualités</span>
-              <h2>À la une chez Rhône Saône Habitat.</h2>
+              <span class="eyebrow">Preuves sociales</span>
+              <h2>Des parcours qui donnent envie d’habiter autrement.</h2>
             </div>
-            <a class="button button--ghost" href="#">Toutes les actualités</a>
+            <a class="button button--ghost" href="#contact">Échanger sur un projet</a>
           </div>
           <div class="news">
             <article class="news__main reveal">
               <div class="news__art"><span></span><i></i></div>
               <div class="news__body">
-                <small>Vie de la coopérative</small>
-                <h3>Des projets immobiliers conçus au plus près des usages.</h3>
+                <small>Cas client · Accession</small>
+                <h3>Devenir propriétaire sans quitter son bassin de vie.</h3>
                 <p>
-                  Découvrez comment nos équipes imaginent des logements accessibles, sobres et agréables à
-                  vivre.
+                  Un accompagnement clair, un budget sécurisé et un programme neuf qui permet de choisir
+                  son cadre de vie au lieu de s’éloigner par défaut.
                 </p>
               </div>
             </article>
             <article class="news__side reveal">
-              <small>Accession</small>
-              <h3>Le BRS, une autre façon de devenir propriétaire.</h3>
-              <a href="#">Lire l’article →</a>
+              <small>Territoire</small>
+              <h3>Habiter hors de Lyon, tout en restant connecté à ses usages.</h3>
+              <a href="#">Voir le parcours →</a>
             </article>
             <article class="news__side reveal">
-              <small>Pratique</small>
-              <h3>Les bons réflexes pour préparer votre projet logement.</h3>
-              <a href="#">Lire l’article →</a>
+              <small>Copropriété</small>
+              <h3>Une résidence accompagnée pour rester agréable à vivre.</h3>
+              <a href="#">Voir le cas →</a>
             </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section practical" id="contact">
-        <div class="shell practical__grid">
-          <div class="practical__intro reveal">
-            <span class="eyebrow">Accès rapides</span>
-            <h2>Vous êtes déjà client ?</h2>
-            <p>Retrouvez directement les services et informations qui vous concernent.</p>
-          </div>
-          <div class="quicklinks reveal">
-            <a href="#">Je suis locataire <span>→</span></a>
-            <a href="#">Je suis copropriétaire <span>→</span></a>
-            <a href="#">Je souhaite vendre un terrain <span>→</span></a>
-            <a href="#">Trouver un contact <span>→</span></a>
           </div>
         </div>
       </section>
     </main>
 
-    <footer>
+    <footer id="contact">
       <div class="shell footer__grid">
         <div>
           <img src="/rsh-logo.png" alt="Rhône Saône Habitat" width="242" height="239" />
-          <p>Une coopérative locale engagée pour un habitat accessible, durable et de qualité.</p>
+          <p>Une coopérative promotrice engagée pour un habitat accessible, désirable et durable.</p>
         </div>
         <div>
-          <h4>Nos métiers</h4>
+          <h4>Nos expertises</h4>
           <a href="#acheter">Acheter</a>
-          <a href="#louer">Louer</a>
+          <a href="#programmes">Programmes</a>
           <a href="#syndic">Syndic</a>
         </div>
         <div>
           <h4>Rhône Saône Habitat</h4>
           <a href="#cooperative">La coopérative</a>
-          <a href="#actualites">Actualités</a>
+          <a href="#preuves">Preuves sociales</a>
           <a href="#contact">Contact</a>
         </div>
         <div>
@@ -919,23 +908,16 @@ const programs = [
     clip-path: polygon(50% 0, 100% 40%, 100% 100%, 0 100%, 0 40%);
   }
 
-  .key {
-    border: 28px solid #fff;
-    border-radius: 50%;
-  }
-
-  .key::after {
-    content: "";
-    position: absolute;
-    width: 100px;
-    height: 28px;
-    right: 80px;
-    top: 28px;
-    background: #fff;
-  }
-
   .blocks {
     background: linear-gradient(90deg, #fff 0 45%, transparent 45% 55%, #fff 55%);
+  }
+
+  .district {
+    background:
+      linear-gradient(#fff 0 0) 0 48% / 34% 52% no-repeat,
+      linear-gradient(#fff 0 0) 49% 22% / 34% 78% no-repeat,
+      linear-gradient(#fff 0 0) 98% 36% / 28% 64% no-repeat;
+    border-bottom: 18px solid var(--ink);
   }
 
   .programs {
@@ -1228,42 +1210,6 @@ const programs = [
     font-weight: 900;
   }
 
-  .practical {
-    background: var(--orange);
-  }
-
-  .practical__grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 50px;
-    align-items: center;
-  }
-
-  .practical__intro h2 {
-    color: #2c1808;
-  }
-
-  .practical__intro p {
-    color: rgba(44, 24, 8, 0.72);
-  }
-
-  .quicklinks {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 12px;
-  }
-
-  .quicklinks a {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 22px;
-    background: #fff;
-    border-radius: 18px;
-    color: var(--ink);
-    font-weight: 900;
-  }
-
   footer {
     padding: 75px 0 28px;
     background: var(--ink2);
@@ -1315,8 +1261,8 @@ const programs = [
   }
 
   .reveal {
-    opacity: 0;
-    transform: translateY(20px);
+    opacity: 1;
+    transform: none;
     transition: 0.7s ease;
   }
 
@@ -1337,8 +1283,7 @@ const programs = [
     }
 
     .hero__grid,
-    .coop,
-    .practical__grid {
+    .coop {
       grid-template-columns: 1fr;
     }
 
@@ -1427,7 +1372,6 @@ const programs = [
     .news,
     .values,
     .stats__grid,
-    .quicklinks,
     .footer__grid {
       grid-template-columns: 1fr;
     }
